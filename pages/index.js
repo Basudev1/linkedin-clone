@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
-
+import { signOut } from "next-auth/react";
+import Header from "../components/Header";
 export default function Home() {
   return (
     <div>
@@ -12,7 +13,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      LinkedIn Clone
+      <Header />
     </div>
   );
 }
