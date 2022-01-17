@@ -2,6 +2,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+.env file contains
+
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+JWT_SECRET=
+MONGODB_URI=
+MONGODB_DB=linkedin
+
 First, run the development server:
 
 ```bash
