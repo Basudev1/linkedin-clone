@@ -1,4 +1,4 @@
-function HeaderLink({ Icon, text, avatar, feed, active, avatar, hidden }) {
+function HeaderLink({ Icon, text, feed, active, avatar, hidden }) {
   return (
     <div
       className={`${
