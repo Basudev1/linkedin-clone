@@ -84,7 +84,6 @@ function Header() {
           </div>
         )}
       </div>
-      <h1 className="text-black dark:text-blue-600">Testing</h1>
     </header>
   );
 }
