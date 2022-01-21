@@ -25,7 +25,7 @@ function Header() {
   // After mounting, we have access to the theme
   useEffect(() => setMounted(true), []);
 
-  console.log("Current theme is", theme);
+  // console.log("Current theme is", theme);
 
   return (
     <header
