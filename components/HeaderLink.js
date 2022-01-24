@@ -1,4 +1,4 @@
-import { useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 
 function HeaderLink({ Icon, text, feed, active, avatar, hidden }) {
   const { data: session } = useSession();
@@ -13,7 +13,11 @@ function HeaderLink({ Icon, text, feed, active, avatar, hidden }) {
       } ${active && "!text-black dark:!text-white"}`}
     >
       {avatar ? (
-        <Icon className="!h-7 !w-7 lg:!-mb-1" src={session?.user?.image} />
+        <Icon
+          className="!h-7 !w-7 lg:!-mb-1"
+          src={session?.user?.image}
+          onClick={signOut}
+        />
       ) : (
         <Icon />
       )}

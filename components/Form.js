@@ -30,7 +30,7 @@ function Form() {
     });
 
     const responseData = await response.json();
-    console.log(responseData);
+    // console.log(responseData);
 
     setHandlePost(true);
     setModalOpen(false);

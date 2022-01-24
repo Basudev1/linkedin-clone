@@ -19,6 +19,7 @@ function Post({ post, modalPost }) {
   const [postState, setPostState] = useRecoilState(getPostState);
   const [showInput, setShowInput] = useState(false);
   const [liked, setLiked] = useState(false);
+  const [handlePost, setHandlePost] = useRecoilState(handlePostState);
   const truncate = (string, n) =>
     string?.length > n ? string.substr(0, n - 1) + "...see more" : string;
   const deletePost = async () => {

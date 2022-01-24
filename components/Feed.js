@@ -18,7 +18,7 @@ function Feed({ posts }) {
       setRealtimePosts(responseData);
       setHandlePost(false);
       setUseSSRPosts(false);
-      console.log(realtimePosts);
+      // console.log(realtimePosts);
     };
 
     fetchPosts();
